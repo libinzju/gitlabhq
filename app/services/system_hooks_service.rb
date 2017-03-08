@@ -28,6 +28,8 @@ class SystemHooksService
         data.merge!(
           username: model.user.username
         )
+      else 
+				data
       end
     when Project
       data.merge!(project_data(model))
